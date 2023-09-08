@@ -1,0 +1,28 @@
+belajar form
+-----
+<form>
+  <div class="form-group">
+    <label for="">Nama Lengkap</label>
+    <input type="text" placeholder="Isikan Nama Anda" required />
+  </div>
+  <div class="form-group">
+    <label for="">Tanggal Lahir</label>
+    <input type="date" placeholder="Isikan Tanggal Lahir Anda" required />
+  </div>
+  <div class="form-group">
+    <label for="">Jenis Kelamin</label>
+    <select name="" id="" required>
+      <option value="" selected disabled>Pilih Jenis Kelamin</option>
+      <option value="">Laki-laki</option>
+      <option value="">Perempuan</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="">Alamat</label>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Isikan Alamat Lengkap Anda" required></textarea>
+  </div>
+  <div class="form-group">
+    <button type="reset">Reset Data</button>
+    <button type="submit">Simpan Data</button>
+  </div>
+</form>
