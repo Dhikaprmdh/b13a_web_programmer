@@ -1,0 +1,120 @@
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+nav ul li a:hover {
+  background-color: aliceblue;
+}
+
+section {
+  margin: 20px;
+}
+
+form {
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+form input[type="submit"] {
+  margin: 0;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* tambahkan CSS untuk section profile disini */
+section div {
+  background-color: white;
+}
+
+.profile-image {
+  border: 2px solid orangered;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  margin-left: 15px;
+  float: left;
+}
+
+.profile-text {
+  float: left;
+  margin-top: 50px;
+}
+
+.kotak-biru {
+  background-color: #0000ff;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15%;
+}
+
+.kotak-hijau{
+  background-color: #ffffff;
+  border: 1;
+  border-color: green;
+  color: green;
+  padding: 13px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15%;
+}
+
+.nama {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.pekerjaan {
+  color: #777;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.detail {
+line-height: 60px;
+font-size: 20px;
+margin-left: 750px;
+}

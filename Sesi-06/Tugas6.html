@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 6</title>
+    <style>
+        .paragraf-red {
+            color: red;
+        }
+        .paragraf-green {
+            color: green;
+        }
+        .paragraf-blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <script>
+        const paragraphs = document.querySelectorAll(".paragraf");
+        let isRed = true;
+
+        function toggleRedColor() {
+            paragraphs[0].classList.toggle("paragraf-red", isRed);
+            isRed = !isRed;
+        }
+
+        let isGreen = true;
+
+        function toggleGreenColor() {
+            paragraphs[1].classList.toggle("paragraf-green", isGreen);
+            isGreen = !isGreen;
+        }
+
+        let isBlue = true;
+
+        function toggleBlueColor() {
+            paragraphs[2].classList.toggle("paragraf-blue", isBlue);
+            isBlue = !isBlue;
+        }
+
+
+        setInterval(toggleRedColor, 1000); 
+        setInterval(toggleGreenColor, 1000); 
+        setInterval(toggleBlueColor, 1000); 
+    </script>
+</body>
+</html>

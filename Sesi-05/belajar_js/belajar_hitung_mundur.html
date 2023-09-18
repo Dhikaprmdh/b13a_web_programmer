@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar hitung mundur</title>
+</head>
+<body>
+    <h1>Belajar Hitung Maju Mundur dengan JS</h1>
+    <button onclick="mundur()">Mundur</button>
+    <button onclick="maju()">Maju</button>
+
+    <!-- Tambahkan elemen untuk menampilkan angka -->
+    <div id="hasil"></div>
+    <script>
+        var hitung = 0
+        var datahasil = document.getElementById("hasil")
+        datahasil.innerHTML = `Hasil: ${hitung}`
+
+        function mundur() {
+            hitung--
+            datahasil.innerHTML = `Hasil: ${hitung}`
+        }
+
+        function maju() {
+            hitung++;
+            datahasil.innerHTML = `Hasil: ${hitung}`
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

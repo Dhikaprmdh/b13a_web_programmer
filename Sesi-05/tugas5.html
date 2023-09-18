@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas5</title>
+</head>
+<body>
+    <h1>belajar loop</h1>
+
+    <label>Pesan:</label>
+    <input id="pesan" type="text" placeholder="Masukkan pesan"/>
+    <br>
+    <label>Berapa kali:</label>
+    <input id="jumlah" type="number" placeholder="Masukkan jumlah"/>
+    <br>
+    <button onclick="tampilpesan()">Cetak!</button>
+    <ol id="ulang"></ol>
+
+    <script>
+        function tampilpesan() {
+            const pesanInput = document.getElementById("pesan");
+            const jumlahInput = document.getElementById("jumlah");
+            const ulangList = document.getElementById("ulang");
+            ulangList.innerHTML = '';
+            
+            const pesan = pesanInput.value;
+            const jumlah = parseInt(jumlahInput.value);
+            
+            for (let i = 1; i <= jumlah; i++) {
+                const listItem = document.createElement("li");
+                listItem.textContent = pesan;
+                ulangList.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>
